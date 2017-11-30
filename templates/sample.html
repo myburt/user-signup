@@ -25,7 +25,7 @@
                     <label for="username">Username</label>
                 </td>
                 <td>
-                    <input name="username" value="" type="text">
+                    <input name="username" value="{{username}}" onfocus="this.value='{{username}}'" type="text">
                     <span class="error">{{username_error}}</span>
                 </td>
             </tr>
@@ -34,7 +34,7 @@
                     <label for="password">Password</label>
                 </td>
                 <td>
-                    <input name="password" type="password">
+                    <input name="password" type="password" onfocus="">
                     <span class="error">{{password_error}}</span>
                 </td>
             </tr>
@@ -43,7 +43,7 @@
                     <label for="verify">Verify Password</label>
                 </td>
                 <td>
-                    <input name="verify" type="password">
+                    <input name="verify" type="password" onfocus="">
                     <span class="error">{{verify_error}}</span>
                 </td>
             </tr>
@@ -52,7 +52,7 @@
                     <label for="email">Email (optional)</label>
                 </td>
                 <td>
-                    <input name="email" value="">
+                    <input name="email" value={{email}}>
                     <span class="error">{{email_error}}</span>
                 </td>
             </tr>
